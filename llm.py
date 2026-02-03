@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-OPENROUTER_API_KEY = os.getenv("openrouter-api-key")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER-API-KEY")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
-MODEL = os.getenv("openrouter-llm-model")
+MODEL = os.getenv("OPENROUTER-LLM-MODEL")
 
 client = OpenAI(
     api_key=OPENROUTER_API_KEY,
